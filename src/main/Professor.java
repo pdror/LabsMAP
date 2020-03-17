@@ -28,5 +28,8 @@ public class Professor extends Usuario {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Matrícula: " + super.getMatricula() + "\t Nome: " + super.getNome();
+    }
 }

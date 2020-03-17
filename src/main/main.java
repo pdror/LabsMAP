@@ -18,10 +18,19 @@ public class main {
         Disciplina disc04 = new Disciplina(0004, "Tópicos em Programação", "QUA/20H - SEX/18H");
 
         disc01.setProfessor(prof01);
-        disc02.setProfessor(prof01);
+
+        Disciplina disc05 = new Disciplina(002, "Disciplina de Teste I", "SEG/18H - SEX/18H");
+        Disciplina disc06 = new Disciplina(003, "Disciplina de Teste II", "QUA/08H - SEX/11H");
+
+        disc05.setProfessor(prof01);
+        disc06.setProfessor(prof01);
+
+
+        System.out.println(disc01.getAlunos());
 
         //MATRICULANDO ALUNOS
         disc01.matricularAluno(aluno01);
+        System.out.println(disc01.getAlunos());
         disc01.matricularAluno(aluno02);
         disc01.matricularAluno(aluno03);
         disc01.matricularAluno(aluno04);
